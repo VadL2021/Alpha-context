@@ -1,0 +1,45 @@
+  *{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /* outline: 1px solid red;    */
+    /* box-sizing: border-box; */
+  }
+  html, body { 
+  /* 
+    Это единственный селектор по тегу во всей верстке
+    Добавил его чтобы footer к низу страницы прижать
+    Есть еще 1 селектор по идентификатору (#app в App.scss) - для того же
+    Остальное - строго по БЭМ
+  */
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:0;
+  }
+
+  @media (max-width: 992px) {
+    *{
+      max-width: 360px;
+    }
+    html, body {
+      
+        width: 360px;
+        /* width: 100%; */
+        /* min-width: 100vw; */ 
+        /* max-width: 100%; */
+        height: 100%;
+        /* display: flex;
+        flex-direction: column; */
+        gap: 0;
+        /* margin: 0 auto;  */
+        /* margin: 0 -15; */
+        padding: 0; 
+        /* overflow-x: hidden;   */
+        box-sizing: border-box;
+
+    }
+  }
+  
+   
